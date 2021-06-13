@@ -1,0 +1,102 @@
+<style>
+  .melna-bieza-kontura {
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    border-style: solid;
+  }
+</style>
+
+
+<div id="bildes-div">
+<img id="button1" src="1.jpg" onclick="myFunction1()" width="600px">
+<img id="button2" src="2.jpg" onclick="myFunction2()" width="600px" style="display: none;">
+<img id="button3" src="3.jpg" onclick="myFunction3()" width="600px" style="display: none;">
+<img id="button4" src="4.jpg" onclick="myFunction4()" width="600px" style="display: none;">
+<img id="button5" src="5.jpg" onclick="myFunction5()" width="600px" style="display: none;">
+</div>
+
+
+<div id="tictac-div"  style="display: none;">
+    <img id="buttonT1" class="melna-bieza-kontura" src="tE.jpg" onclick="myFunctionT1()" width="600px">
+<img id="buttonT2" class="melna-bieza-kontura" src="tO.jpg" onclick="myFunctionT2()" width="600px" style="display: none;">
+<img id="buttonT3" class="melna-bieza-kontura" src="tX.jpg" onclick="myFunctionT3()" width="600px" style="display: none;">
+<img id="buttonT4" class="melna-bieza-kontura" src="tO.jpg" onclick="myFunctionT4()" width="600px" style="display: none;">
+<img id="buttonT5" class="melna-bieza-kontura" src="tX.jpg" onclick="myFunctionT5()" width="600px" style="display: none;">
+</div>
+
+<button id="tictac" onclick="myButtons1()"> iet uz tictac</button>
+<button id="bildes" onclick="myButtons2()" style="display: none;">bildes</button>
+
+<script>
+function myFunction1() {
+    document.getElementById("button1").style='display:none';
+    document.getElementById("button2").style='display:block';
+   // document.getElementById("button2").src='2.jpg';
+  }
+  function myFunction2() {
+    document.getElementById("button2").style='display:none';
+    document.getElementById("button3").style='display:block';
+    //document.getElementById("button3").src='3.jpg';
+  }
+  function myFunction3() {
+    document.getElementById("button3").style='display:none';
+    document.getElementById("button4").style='display:block';
+    //document.getElementById("button4").src='4.jpg';
+  }
+  function myFunction4() {
+    document.getElementById("button4").style='display:none';
+    document.getElementById("button5").style='display:block';
+    //document.getElementById("button5").src='5.jpg';
+  }
+  function myFunction5() {
+    document.getElementById("button5").style='display:none';
+    document.getElementById("button1").style='display:block';
+   // document.getElementById("button1").src='1.jpg';
+  }
+///////////////////////////tictac
+function myFunctionT1() {
+    document.getElementById("buttonT1").style='display:none';
+    document.getElementById("buttonT2").style='display:block';
+   // document.getElementById("button2").src='2.jpg';
+  }
+  function myFunctionT2() {
+    document.getElementById("buttonT2").style='display:none';
+    document.getElementById("buttonT3").style='display:block';
+    //document.getElementById("button3").src='3.jpg';
+  }
+  function myFunctionT3() {
+    document.getElementById("buttonT3").style='display:none';
+    document.getElementById("buttonT4").style='display:block';
+    //document.getElementById("button4").src='4.jpg';
+  }
+  function myFunctionT4() {
+    document.getElementById("buttonT4").style='display:none';
+    document.getElementById("buttonT5").style='display:block';
+    //document.getElementById("button5").src='5.jpg';
+  }
+  function myFunctionT5() {
+    document.getElementById("buttonT5").style='display:none';
+    document.getElementById("buttonT1").style='display:block';
+   // document.getElementById("button1").src='1.jpg';
+  }
+
+  function myButtons1() {
+    document.getElementById("bildes-div").style='display:none';
+    document.getElementById("tictac-div").style='display:block';
+    document.getElementById("tictac").style='display:none';
+    document.getElementById("bildes").style='display:block';
+
+    //document.getElementById("button5").src='5.jpg';
+  }
+  function myButtons2() {
+    document.getElementById("tictac-div").style='display:none';
+    document.getElementById("bildes-div").style='display:block';
+    document.getElementById("bildes").style='display:none';
+    document.getElementById("tictac").style='display:block';
+   // document.getElementById("button1").src='1.jpg';
+  }
+  </script>
+
+
+
+

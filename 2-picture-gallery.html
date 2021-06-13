@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="bilde1" src="1.jpg" onclick="Function1()" width="500px">
+<img id="bilde2" src="2.jpg" onclick="Function2()" width="500px" style="display: none;">
+
+<script>
+function Function1() {
+  document.getElementById("bilde1").style='display:none';
+  document.getElementById("bilde2").style='display:block';
+}
+
+function Function2() {
+  document.getElementById("bilde2").style='display:none';
+  document.getElementById("bilde1").style='display:block';
+}
+
+</script>
+
+</body>
+</html>
