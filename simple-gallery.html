@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+    
+    <img src="1.jpg" alt="" id="bilde" onclick="nakama()" width = "" style="align-content: center;">
+
+    <script>
+let bildesNr = 1
+document.getElementById("bilde").height=innerHeight
+function nakama(){
+    
+    document.getElementById("bilde").src=bildesNr + ".jpg";
+    bildesNr++
+    if(bildesNr>5){
+        bildesNr=1
+    }
+}
+ nakama()
+
+
+
+
+ </script>
+
+
+
+
+
+
+
+</body>
+</html>
