@@ -8,20 +8,19 @@
 </head>
 <body>
     
-    <img src="1.jpg" alt="" id="bilde" onclick="nakama()" width = "" style="align-content: center;">
+    <img src="1.jpg" alt="" id="theImage" onclick="next()" width = "" style="align-content: center;">
 
     <script>
-let bildesNr = 1
-document.getElementById("bilde").height=innerHeight
-function nakama(){
-    
-    document.getElementById("bilde").src=bildesNr + ".jpg";
+let imageNr = 1
+document.getElementById("theImage").height=innerHeight
+function next(){
+    document.getElementById("theImage").src=imageNr + ".jpg";
     bildesNr++
-    if(bildesNr>5){
-        bildesNr=1
+    if(imageNr>5){
+        imageNr=1
     }
 }
- nakama()
+ next()
 
 
 
